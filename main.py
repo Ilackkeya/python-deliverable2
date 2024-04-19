@@ -13,18 +13,18 @@ choice = int(input(f"Welcome {user_name}! Which fruit would you like to buy? "
 if choice == 1:
     i += 1
     print("You bought an apple at $2")
-    price1 = i * 2
-    count_i += i
+    price1 += 2
+    count_i = i
 elif choice == 2:
     j += 1
     print("You bought grape at $1")
-    price2 = j * 1
-    count_j += j
+    price2 += 1
+    count_j = j
 else:
     k += 1
     print("You bought an orange at $3")
-    price3 = k * 3
-    count_j += j
+    price3 += 3
+    count_k = k
 choice1 = input("Would you like to buy another piece of fruit? y/n  \n")
 while choice1 != 'n':
     choice = int(input(f"Welcome {user_name}! Which fruit would you like to buy? "
@@ -33,17 +33,17 @@ while choice1 != 'n':
         i += 1
         print("You bought an apple at $2")
         price1 += 2
-        count_i += i
+        count_i = i
     elif choice == 2:
         j += 1
         print("You bought grape at $1")
         price2 += 1
-        count_j += j
+        count_j = j
     else:
         k += 1
         print("You bought an orange at $3")
         price3 += 3
-        count_k += k
+        count_k = k
     choice1 = input("Would you like to buy another piece of fruit? y/n  \n")
 
 print(f"Order for {user_name}")
